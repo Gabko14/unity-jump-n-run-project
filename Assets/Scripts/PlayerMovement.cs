@@ -22,10 +22,19 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        //Checking if player is falling
+        //Checking if player is above the camera and moving it
         currentheight = body.position.y;
-        travel = currentheight - previousheight;
+        if (currentheight > 5)
+        {
+            Camera.main.transform.position = new Vector3(0, 10, -10);
+        }
+        if (currentheight < 5)
+        {
+            Camera.main.transform.position = new Vector3(0, 0, -10);
+        }
 
+        //Checking if player is falling down or flying up
+        travel = currentheight - previousheight;
         if (travel < 0)
         {
             anim.SetBool("falling", true);
@@ -74,19 +83,11 @@ public class PlayerMovement : MonoBehaviour
                 anim.SetBool("loadingJump", false);
                 if (transform.localScale == Vector3.one)
                 {
-                    print("Vector = one");
-                    print("x is: " + transform.position.x);
-                    print("y velocity is: " + body.velocity.y);
-                    print("jumppower is: " + jumpPower);
                     body.velocity = new Vector2(transform.position.x, body.velocity.y + jumpPower);
                 }
                 else
                 {
                     body.velocity = new Vector2(transform.position.x, body.velocity.y + jumpPower);
-                    print("Vector != one");
-                    print("x is: " + transform.position.x);
-                    print("y velocity is: " + body.velocity.y);
-                    print("jumppower is: " + jumpPower);
                 }
                 jumpPower = 4;
             }
@@ -106,6 +107,11 @@ public class PlayerMovement : MonoBehaviour
     private void OnCollisionExit2D(Collision2D collision)
     {
         onGround = false;
+    }
+
+    private void OnTriggerEnter(Collider collider)
+    {
+        print("Trigger");
     }
 
 }
