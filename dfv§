@@ -1,0 +1,412 @@
+[33mcommit 95d71284a42f79349a0ad3e18cc4a6a7d2ea8c42[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Gabko14 <gabkolistiak@gmail.com>
+Date:   Mon Oct 17 11:04:34 2022 +0200
+
+    First commit, empty project and .gitignore
+
+.collabignore
+.gitignore
+.vsconfig
+Assets/Animations.meta
+Assets/Animations/Green Idle - Animation.anim
+Assets/Animations/Green Idle - Animation.anim.meta
+Assets/Animations/Green Idle - Controller.controller
+Assets/Animations/Green Idle - Controller.controller.meta
+Assets/Animations/Green Jump Down - Animation.anim
+Assets/Animations/Green Jump Down - Animation.anim.meta
+Assets/Animations/Green Jump Land - Animation.anim
+Assets/Animations/Green Jump Land - Animation.anim.meta
+Assets/Animations/Green Jump Start-up - Animation.anim
+Assets/Animations/Green Jump Start-up - Animation.anim.meta
+Assets/Animations/Green Jump Start-up-After - Animation.anim
+Assets/Animations/Green Jump Start-up-After - Animation.anim.meta
+Assets/Animations/Green Jump To Fall - Animation.anim
+Assets/Animations/Green Jump To Fall - Animation.anim.meta
+Assets/Animations/Green Jump Up - Animation.anim
+Assets/Animations/Green Jump Up - Animation.anim.meta
+Assets/Animations/Sprite Sheet - Green Jump Start-up_8.asset
+Assets/Animations/Sprite Sheet - Green Jump Start-up_8.asset.meta
+Assets/Levels.meta
+Assets/Levels/Level1.unity
+Assets/Levels/Level1.unity.meta
+Assets/Scripts.meta
+Assets/Scripts/PlayerMovement.cs
+Assets/Scripts/PlayerMovement.cs.meta
+Assets/Sprites.meta
+Assets/Sprites/Character.meta
+Assets/Sprites/Character/Demo.unity
+Assets/Sprites/Character/Demo.unity.meta
+Assets/Sprites/Character/DemoSettings.lighting
+Assets/Sprites/Character/DemoSettings.lighting.meta
+Assets/Sprites/Character/Dragon Warrior AI.ai
+Assets/Sprites/Character/Dragon Warrior AI.ai.meta
+Assets/Sprites/Character/Dragon Warrior EPS.eps
+Assets/Sprites/Character/Dragon Warrior EPS.eps.meta
+Assets/Sprites/Character/Dragon Warrior PNG.meta
+Assets/Sprites/Character/Dragon Warrior PNG/attack_01.png
+Assets/Sprites/Character/Dragon Warrior PNG/attack_01.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/attack_02.png
+Assets/Sprites/Character/Dragon Warrior PNG/attack_02.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/attack_03.png
+Assets/Sprites/Character/Dragon Warrior PNG/attack_03.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/crouch_01.png
+Assets/Sprites/Character/Dragon Warrior PNG/crouch_01.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/crouch_02.png
+Assets/Sprites/Character/Dragon Warrior PNG/crouch_02.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/crouch_ATK_01.png
+Assets/Sprites/Character/Dragon Warrior PNG/crouch_ATK_01.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/crouch_ATK_02.png
+Assets/Sprites/Character/Dragon Warrior PNG/crouch_ATK_02.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/crouch_ATK_03.png
+Assets/Sprites/Character/Dragon Warrior PNG/crouch_ATK_03.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/die_001.png
+Assets/Sprites/Character/Dragon Warrior PNG/die_001.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/die_002.png
+Assets/Sprites/Character/Dragon Warrior PNG/die_002.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/die_003.png
+Assets/Sprites/Character/Dragon Warrior PNG/die_003.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/die_004.png
+Assets/Sprites/Character/Dragon Warrior PNG/die_004.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/die_005.png
+Assets/Sprites/Character/Dragon Warrior PNG/die_005.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/die_006.png
+Assets/Sprites/Character/Dragon Warrior PNG/die_006.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/die_007.png
+Assets/Sprites/Character/Dragon Warrior PNG/die_007.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/die_008.png
+Assets/Sprites/Character/Dragon Warrior PNG/die_008.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/die_009.png
+Assets/Sprites/Character/Dragon Warrior PNG/die_009.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/die_010.png
+Assets/Sprites/Character/Dragon Warrior PNG/die_010.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/dizzy_01.png
+Assets/Sprites/Character/Dragon Warrior PNG/dizzy_01.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/dizzy_02.png
+Assets/Sprites/Character/Dragon Warrior PNG/dizzy_02.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/dizzy_03.png
+Assets/Sprites/Character/Dragon Warrior PNG/dizzy_03.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/flyKick_01.png
+Assets/Sprites/Character/Dragon Warrior PNG/flyKick_01.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/flyKick_02.png
+Assets/Sprites/Character/Dragon Warrior PNG/flyKick_02.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/flyKick_03.png
+Assets/Sprites/Character/Dragon Warrior PNG/flyKick_03.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/flyKick_04.png
+Assets/Sprites/Character/Dragon Warrior PNG/flyKick_04.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/flyKick_05.png
+Assets/Sprites/Character/Dragon Warrior PNG/flyKick_05.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/flyKick_06.png
+Assets/Sprites/Character/Dragon Warrior PNG/flyKick_06.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/hurt_01.png
+Assets/Sprites/Character/Dragon Warrior PNG/hurt_01.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/hurt_02.png
+Assets/Sprites/Character/Dragon Warrior PNG/hurt_02.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/idle_01.png
+Assets/Sprites/Character/Dragon Warrior PNG/idle_01.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/idle_02.png
+Assets/Sprites/Character/Dragon Warrior PNG/idle_02.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/idle_03.png
+Assets/Sprites/Character/Dragon Warrior PNG/idle_03.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/idle_04.png
+Assets/Sprites/Character/Dragon Warrior PNG/idle_04.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/idle_05.png
+Assets/Sprites/Character/Dragon Warrior PNG/idle_05.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/idle_06.png
+Assets/Sprites/Character/Dragon Warrior PNG/idle_06.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/jumpATK_01.png
+Assets/Sprites/Character/Dragon Warrior PNG/jumpATK_01.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/jumpATK_02.png
+Assets/Sprites/Character/Dragon Warrior PNG/jumpATK_02.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/jumpATK_03.png
+Assets/Sprites/Character/Dragon Warrior PNG/jumpATK_03.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/jump_01.png
+Assets/Sprites/Character/Dragon Warrior PNG/jump_01.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/jump_02.png
+Assets/Sprites/Character/Dragon Warrior PNG/jump_02.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/strike_01.png
+Assets/Sprites/Character/Dragon Warrior PNG/strike_01.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/strike_02.png
+Assets/Sprites/Character/Dragon Warrior PNG/strike_02.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/strike_03.png
+Assets/Sprites/Character/Dragon Warrior PNG/strike_03.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/strike_04.png
+Assets/Sprites/Character/Dragon Warrior PNG/strike_04.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/strike_05.png
+Assets/Sprites/Character/Dragon Warrior PNG/strike_05.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/walk_01.png
+Assets/Sprites/Character/Dragon Warrior PNG/walk_01.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/walk_02.png
+Assets/Sprites/Character/Dragon Warrior PNG/walk_02.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/walk_03.png
+Assets/Sprites/Character/Dragon Warrior PNG/walk_03.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/walk_04.png
+Assets/Sprites/Character/Dragon Warrior PNG/walk_04.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/walk_05.png
+Assets/Sprites/Character/Dragon Warrior PNG/walk_05.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/walk_06.png
+Assets/Sprites/Character/Dragon Warrior PNG/walk_06.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/win_01.png
+Assets/Sprites/Character/Dragon Warrior PNG/win_01.png.meta
+Assets/Sprites/Character/Dragon Warrior PNG/win_02.png
+Assets/Sprites/Character/Dragon Warrior PNG/win_02.png.meta
+Assets/Sprites/Character/Effects.meta
+Assets/Sprites/Character/Effects/dashwind_01.png
+Assets/Sprites/Character/Effects/dashwind_01.png.meta
+Assets/Sprites/Character/Effects/dashwind_02.png
+Assets/Sprites/Character/Effects/dashwind_02.png.meta
+Assets/Sprites/Character/Effects/dashwind_03.png
+Assets/Sprites/Character/Effects/dashwind_03.png.meta
+Assets/Sprites/Character/Effects/dashwind_04.png
+Assets/Sprites/Character/Effects/dashwind_04.png.meta
+Assets/Sprites/Character/Effects/dashwind_05.png
+Assets/Sprites/Character/Effects/dashwind_05.png.meta
+Assets/Sprites/Character/Effects/dashwind_06.png
+Assets/Sprites/Character/Effects/dashwind_06.png.meta
+Assets/Sprites/Character/Effects/explosion_01.png
+Assets/Sprites/Character/Effects/explosion_01.png.meta
+Assets/Sprites/Character/Effects/explosion_02.png
+Assets/Sprites/Character/Effects/explosion_02.png.meta
+Assets/Sprites/Character/Effects/explosion_03.png
+Assets/Sprites/Character/Effects/explosion_03.png.meta
+Assets/Sprites/Character/Effects/explosion_04.png
+Assets/Sprites/Character/Effects/explosion_04.png.meta
+Assets/Sprites/Character/Effects/explosion_05.png
+Assets/Sprites/Character/Effects/explosion_05.png.meta
+Assets/Sprites/Character/Effects/explosion_06.png
+Assets/Sprites/Character/Effects/explosion_06.png.meta
+Assets/Sprites/Character/Effects/fireball_01.png
+Assets/Sprites/Character/Effects/fireball_01.png.meta
+Assets/Sprites/Character/Effects/fireball_02.png
+Assets/Sprites/Character/Effects/fireball_02.png.meta
+Assets/Sprites/Character/Effects/fireball_03.png
+Assets/Sprites/Character/Effects/fireball_03.png.meta
+Assets/Sprites/Character/Effects/iblast_01.png
+Assets/Sprites/Character/Effects/iblast_01.png.meta
+Assets/Sprites/Character/Effects/iblast_02.png
+Assets/Sprites/Character/Effects/iblast_02.png.meta
+Assets/Sprites/Character/Effects/iblast_03.png
+Assets/Sprites/Character/Effects/iblast_03.png.meta
+Assets/Sprites/Character/Effects/particlel.png
+Assets/Sprites/Character/Effects/particlel.png.meta
+Assets/Sprites/Character/Effects/potion.png
+Assets/Sprites/Character/Effects/potion.png.meta
+Assets/Sprites/Character/Read Me.txt
+Assets/Sprites/Character/Read Me.txt.meta
+Assets/War.meta
+Assets/War/High Fantasy - Slime Enemy.meta
+Assets/War/High Fantasy - Slime Enemy/Animation.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Death.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Death/Blue.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Death/Blue/Blue Death (No flash) - Animation.anim
+Assets/War/High Fantasy - Slime Enemy/Animation/Death/Blue/Blue Death (No flash) - Animation.anim.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Death/Blue/Blue Death (No flash) - Controller.controller
+Assets/War/High Fantasy - Slime Enemy/Animation/Death/Blue/Blue Death (No flash) - Controller.controller.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Death/Blue/Blue Death - Animation.anim
+Assets/War/High Fantasy - Slime Enemy/Animation/Death/Blue/Blue Death - Animation.anim.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Death/Blue/Blue Death - Controller.controller
+Assets/War/High Fantasy - Slime Enemy/Animation/Death/Blue/Blue Death - Controller.controller.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Death/Green.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Death/Green/Green Death (No flash) - Animation.anim
+Assets/War/High Fantasy - Slime Enemy/Animation/Death/Green/Green Death (No flash) - Animation.anim.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Death/Green/Green Death (No flash) - Controller.controller
+Assets/War/High Fantasy - Slime Enemy/Animation/Death/Green/Green Death (No flash) - Controller.controller.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Death/Green/Green Death - Animation.anim
+Assets/War/High Fantasy - Slime Enemy/Animation/Death/Green/Green Death - Animation.anim.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Death/Green/Green Death - Controller.controller
+Assets/War/High Fantasy - Slime Enemy/Animation/Death/Green/Green Death - Controller.controller.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Death/Red.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Death/Red/Red Death (No flash) - Animation.anim
+Assets/War/High Fantasy - Slime Enemy/Animation/Death/Red/Red Death (No flash) - Animation.anim.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Death/Red/Red Death (No flash) - Controller.controller
+Assets/War/High Fantasy - Slime Enemy/Animation/Death/Red/Red Death (No flash) - Controller.controller.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Death/Red/Red Death - Animation.anim
+Assets/War/High Fantasy - Slime Enemy/Animation/Death/Red/Red Death - Animation.anim.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Death/Red/Red Death - Controller.controller
+Assets/War/High Fantasy - Slime Enemy/Animation/Death/Red/Red Death - Controller.controller.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Hurt.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Hurt/Blue.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Hurt/Blue/Blue Hurt (No flash) - Animation.anim
+Assets/War/High Fantasy - Slime Enemy/Animation/Hurt/Blue/Blue Hurt (No flash) - Animation.anim.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Hurt/Blue/Blue Hurt (No flash) - Controller.controller
+Assets/War/High Fantasy - Slime Enemy/Animation/Hurt/Blue/Blue Hurt (No flash) - Controller.controller.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Hurt/Blue/Blue Hurt - Animation.anim
+Assets/War/High Fantasy - Slime Enemy/Animation/Hurt/Blue/Blue Hurt - Animation.anim.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Hurt/Blue/Blue Hurt - Controller.controller
+Assets/War/High Fantasy - Slime Enemy/Animation/Hurt/Blue/Blue Hurt - Controller.controller.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Hurt/Green.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Hurt/Green/Green Hurt (No flash) - Animation.anim
+Assets/War/High Fantasy - Slime Enemy/Animation/Hurt/Green/Green Hurt (No flash) - Animation.anim.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Hurt/Green/Green Hurt (No flash) - Controller.controller
+Assets/War/High Fantasy - Slime Enemy/Animation/Hurt/Green/Green Hurt (No flash) - Controller.controller.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Hurt/Green/Green Hurt - Animation.anim
+Assets/War/High Fantasy - Slime Enemy/Animation/Hurt/Green/Green Hurt - Animation.anim.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Hurt/Green/Green Hurt - Controller.controller
+Assets/War/High Fantasy - Slime Enemy/Animation/Hurt/Green/Green Hurt - Controller.controller.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Hurt/Red.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Hurt/Red/Red Hurt (No flash) - Animation.anim
+Assets/War/High Fantasy - Slime Enemy/Animation/Hurt/Red/Red Hurt (No flash) - Animation.anim.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Hurt/Red/Red Hurt (No flash) - Controller.controller
+Assets/War/High Fantasy - Slime Enemy/Animation/Hurt/Red/Red Hurt (No flash) - Controller.controller.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Hurt/Red/Red Hurt - Animation.anim
+Assets/War/High Fantasy - Slime Enemy/Animation/Hurt/Red/Red Hurt - Animation.anim.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Hurt/Red/Red Hurt - Controller.controller
+Assets/War/High Fantasy - Slime Enemy/Animation/Hurt/Red/Red Hurt - Controller.controller.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Idle.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Idle/Blue.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Idle/Blue/Blue Idle - Animation.anim
+Assets/War/High Fantasy - Slime Enemy/Animation/Idle/Blue/Blue Idle - Animation.anim.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Idle/Blue/Blue Idle - Controller.controller
+Assets/War/High Fantasy - Slime Enemy/Animation/Idle/Blue/Blue Idle - Controller.controller.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Idle/Green.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Idle/Green/Green Idle - Animation.anim
+Assets/War/High Fantasy - Slime Enemy/Animation/Idle/Green/Green Idle - Animation.anim.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Idle/Green/Green Idle - Controller.controller
+Assets/War/High Fantasy - Slime Enemy/Animation/Idle/Green/Green Idle - Controller.controller.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Idle/Red.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Idle/Red/Red Idle - Animation.anim
+Assets/War/High Fantasy - Slime Enemy/Animation/Idle/Red/Red Idle - Animation.anim.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Idle/Red/Red Idle - Controller.controller
+Assets/War/High Fantasy - Slime Enemy/Animation/Idle/Red/Red Idle - Controller.controller.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Blue.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Blue/Blue Jump - Controller.controller
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Blue/Blue Jump - Controller.controller.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Blue/Blue Jump Down - Animation.anim
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Blue/Blue Jump Down - Animation.anim.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Blue/Blue Jump Land - Animation.anim
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Blue/Blue Jump Land - Animation.anim.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Blue/Blue Jump Start-up - Animation.anim
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Blue/Blue Jump Start-up - Animation.anim.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Blue/Blue Jump To Fall - Animation.anim
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Blue/Blue Jump To Fall - Animation.anim.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Blue/Blue Jump Up - Animation.anim
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Blue/Blue Jump Up - Animation.anim.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Green.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Green/Green Jump - Controller.controller
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Green/Green Jump - Controller.controller.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Green/Green Jump Down - Animation.anim
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Green/Green Jump Down - Animation.anim.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Green/Green Jump Land - Animation.anim
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Green/Green Jump Land - Animation.anim.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Green/Green Jump Start-up - Animation.anim
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Green/Green Jump Start-up - Animation.anim.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Green/Green Jump To Fall - Animation.anim
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Green/Green Jump To Fall - Animation.anim.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Green/Green Jump Up - Animation.anim
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Green/Green Jump Up - Animation.anim.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Red.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Red/Red Jump - Controller.controller
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Red/Red Jump - Controller.controller.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Red/Red Jump Down - Animation.anim
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Red/Red Jump Down - Animation.anim.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Red/Red Jump Land - Animation.anim
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Red/Red Jump Land - Animation.anim.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Red/Red Jump Start-up - Animation.anim
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Red/Red Jump Start-up - Animation.anim.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Red/Red Jump To Fall - Animation.anim
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Red/Red Jump To Fall - Animation.anim.meta
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Red/Red Jump Up - Animation.anim
+Assets/War/High Fantasy - Slime Enemy/Animation/Jump/Red/Red Jump Up - Animation.anim.meta
+Assets/War/High Fantasy - Slime Enemy/Prefabs.meta
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Blue.meta
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Blue/Blue Death (No Flash).prefab
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Blue/Blue Death (No Flash).prefab.meta
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Blue/Blue Death.prefab
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Blue/Blue Death.prefab.meta
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Blue/Blue Hurt (No Flash).prefab
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Blue/Blue Hurt (No Flash).prefab.meta
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Blue/Blue Hurt.prefab
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Blue/Blue Hurt.prefab.meta
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Blue/Blue Idle.prefab
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Blue/Blue Idle.prefab.meta
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Blue/Blue Jump.prefab
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Blue/Blue Jump.prefab.meta
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Green.meta
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Green/Green Death (No Flash).prefab
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Green/Green Death (No Flash).prefab.meta
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Green/Green Death.prefab
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Green/Green Death.prefab.meta
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Green/Green Hurt (No Flash).prefab
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Green/Green Hurt (No Flash).prefab.meta
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Green/Green Hurt.prefab
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Green/Green Hurt.prefab.meta
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Green/Green Idle.prefab
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Green/Green Idle.prefab.meta
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Green/Green Jump.prefab
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Green/Green Jump.prefab.meta
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Red.meta
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Red/Red Death (No Flash).prefab
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Red/Red Death (No Flash).prefab.meta
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Red/Red Death.prefab
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Red/Red Death.prefab.meta
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Red/Red Hurt (No Flash).prefab
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Red/Red Hurt (No Flash).prefab.meta
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Red/Red Hurt.prefab
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Red/Red Hurt.prefab.meta
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Red/Red Idle.prefab
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Red/Red Idle.prefab.meta
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Red/Red Jump.prefab
+Assets/War/High Fantasy - Slime Enemy/Prefabs/Red/Red Jump.prefab.meta
+Assets/War/High Fantasy - Slime Enemy/README.txt
+Assets/War/High Fantasy - Slime Enemy/README.txt.meta
+Assets/War/High Fantasy - Slime Enemy/Scenes.meta
+Assets/War/High Fantasy - Slime Enemy/Scenes/Demo.unity
+Assets/War/High Fantasy - Slime Enemy/Scenes/Demo.unity.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Death.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Death/Blue.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Death/Blue/Sprite Sheet - Blue Death - No Flash.png
+Assets/War/High Fantasy - Slime Enemy/Sprites/Death/Blue/Sprite Sheet - Blue Death - No Flash.png.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Death/Blue/Sprite Sheet - Blue Death.png
+Assets/War/High Fantasy - Slime Enemy/Sprites/Death/Blue/Sprite Sheet - Blue Death.png.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Death/Green.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Death/Green/Sprite Sheet - Green Death - No Flash.png
+Assets/War/High Fantasy - Slime Enemy/Sprites/Death/Green/Sprite Sheet - Green Death - No Flash.png.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Death/Green/Sprite Sheet - Green Death.png
+Assets/War/High Fantasy - Slime Enemy/Sprites/Death/Green/Sprite Sheet - Green Death.png.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Death/Red.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Death/Red/Sprite Sheet - Red Death - No Flash.png
+Assets/War/High Fantasy - Slime Enemy/Sprites/Death/Red/Sprite Sheet - Red Death - No Flash.png.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Death/Red/Sprite Sheet - Red Death.png
+Assets/War/High Fantasy - Slime Enemy/Sprites/Death/Red/Sprite Sheet - Red Death.png.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Hurt.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Hurt/Blue.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Hurt/Blue/Sprite Sheet - Blue Hurt - No Flash.png
+Assets/War/High Fantasy - Slime Enemy/Sprites/Hurt/Blue/Sprite Sheet - Blue Hurt - No Flash.png.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Hurt/Blue/Sprite Sheet - Blue Hurt.png
+Assets/War/High Fantasy - Slime Enemy/Sprites/Hurt/Blue/Sprite Sheet - Blue Hurt.png.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Hurt/Green.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Hurt/Green/Sprite Sheet - Green Hurt - No Flash.png
+Assets/War/High Fantasy - Slime Enemy/Sprites/Hurt/Green/Sprite Sheet - Green Hurt - No Flash.png.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Hurt/Green/Sprite Sheet - Green Hurt.png
+Assets/War/High Fantasy - Slime Enemy/Sprites/Hurt/Green/Sprite Sheet - Green Hurt.png.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Hurt/Red.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Hurt/Red/Sprite Sheet - Red Hurt - No Flash.png
+Assets/War/High Fantasy - Slime Enemy/Sprites/Hurt/Red/Sprite Sheet - Red Hurt - No Flash.png.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Hurt/Red/Sprite Sheet - Red Hurt.png
+Assets/War/High Fantasy - Slime Enemy/Sprites/Hurt/Red/Sprite Sheet - Red Hurt.png.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Idle.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Idle/Blue.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Idle/Blue/Sprite Sheet - Blue Idle.png
+Assets/War/High Fantasy - Slime Enemy/Sprites/Idle/Blue/Sprite Sheet - Blue Idle.png.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Idle/Green.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Idle/Green/Sprite Sheet - Green Idle.png
+Assets/War/High Fantasy - Slime Enemy/Sprites/Idle/Green/Sprite Sheet - Green Idle.png.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Idle/Red.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Idle/Red/Sprite Sheet - Red Idle.png
+Assets/War/High Fantasy - Slime Enemy/Sprites/Idle/Red/Sprite Sheet - Red Idle.png.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Jump.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Jump/Blue.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Jump/Blue/Sprite Sheet - Blue Jump Down.png
+Assets/War/High Fantasy - Slime Enemy/Sprites/Jump/Blue/Sprite Sheet - Blue Jump Down.png.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Jump/Blue/Sprite Sheet - Blue Jump Land.png
+Assets/War/High Fantasy - Slime Enemy/Sprites/Jump/Blue/Sprite Sheet - Blue Jump Land.png.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Jump/Blue/Sprite Sheet - Blue Jump Start-up.png
+Assets/War/High Fantasy - Slime Enemy/Sprites/Jump/Blue/Sprite Sheet - Blue Jump Start-up.png.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Jump/Blue/Sprite Sheet - Blue Jump Up.png
+Assets/War/High Fantasy - Slime Enemy/Sprites/Jump/Blue/Sprite Sheet - Blue Jump Up.png.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Jump/Blue/Sprite Sheet - Blue Jump to Fall.png
+Assets/War/High Fantasy - Slime Enemy/Sprites/Jump/Blue/Sprite Sheet - Blue Jump to Fall.png.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Jump/Green.meta
+Assets/War/High Fantasy - Slime Enemy/Sprites/Jump/Green/Sprite Sheet - Green Jump Down.png
+Assets/War/High Fantasy - Slime Enemy/Sprites/Jump/Gr

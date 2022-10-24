@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private float previousheight;
     private float travel;
     [SerializeField] private float speed;
-    [SerializeField] private float jumpPower = 3;
+    [SerializeField] private float jumpPower = 4;
     private void Awake()
     {
         //Grab references for rigidbody and animatoe foe objexct
@@ -44,16 +44,26 @@ public class PlayerMovement : MonoBehaviour
         if (onGround)
         {
             anim.SetBool("flying", false);
-            print("flying false");
             if (Input.GetKey(KeyCode.UpArrow))
             {
-                jumpPower += (float)0.012;
+                if (jumpPower <= 12) {
+                    jumpPower += (float)0.0085;
+                }
                 anim.SetBool("loadingJump", true);
                 //Flip player when moving left/right
                 if (horizontalInput > 0)
+                {
                     transform.localScale = Vector3.one;
-                if (horizontalInput < 0)
+                    anim.SetBool("flyingStraight", false);
+                }
+                else if (horizontalInput < 0)
+                {
                     transform.localScale = new Vector3(-1, 1, 1);
+                    anim.SetBool("flyingStraight", false);
+                } else
+                {
+                    anim.SetBool("flyingStraight", true);
+                }
             }
             else
             {
@@ -64,20 +74,25 @@ public class PlayerMovement : MonoBehaviour
                 anim.SetBool("loadingJump", false);
                 if (transform.localScale == Vector3.one)
                 {
-                    print("yesss");
+                    print("Vector = one");
+                    print("x is: " + transform.position.x);
+                    print("y velocity is: " + body.velocity.y);
+                    print("jumppower is: " + jumpPower);
                     body.velocity = new Vector2(transform.position.x, body.velocity.y + jumpPower);
                 }
                 else
                 {
-                    body.velocity = new Vector2(transform.position.x, body.position.y + jumpPower);
-                    print("noooo");
+                    body.velocity = new Vector2(transform.position.x, body.velocity.y + jumpPower);
+                    print("Vector != one");
+                    print("x is: " + transform.position.x);
+                    print("y velocity is: " + body.velocity.y);
+                    print("jumppower is: " + jumpPower);
                 }
-                jumpPower = 3;
+                jumpPower = 4;
             }
         } else
         {
             anim.SetBool("flying", true);
-            print("flying true");
         }
         previousheight = currentheight;
     }
