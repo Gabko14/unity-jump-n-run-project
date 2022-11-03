@@ -1,5 +1,7 @@
 using System;
 using System.Runtime.InteropServices.ComTypes;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 
@@ -12,10 +14,12 @@ public class PlayerMovement : MonoBehaviour
     private float currentheight;
     private float previousheight;
     private float travel;
+    public GameObject scoreText;
+    public GameObject highScoreText;
     [SerializeField] private float speed;
     [SerializeField] private float jumpPower = 4;
-    [SerializeField] private LayerMask groundLayerMask;
-    [SerializeField] private LayerMask wallLayerMask;
+    [SerializeField] private LayerMask objectLayerMask;
+
     private void Awake()
     {
         //Grab references for rigidbody and animatoe foe objexct
@@ -44,6 +48,12 @@ public class PlayerMovement : MonoBehaviour
         }
         */
         Camera.main.transform.position = new Vector3(0, currentheight, -10);
+        scoreText.GetComponent<TextMeshProUGUI>().text = Math.Round(Camera.main.transform.position.y + 3).ToString();
+        if  (Int16.Parse(scoreText.GetComponent<TextMeshProUGUI>().text) > Int16.Parse(highScoreText.GetComponent<TextMeshProUGUI>().text)) {
+            print(Int16.Parse(scoreText.GetComponent<TextMeshProUGUI>().text));
+            print(Int16.Parse(highScoreText.GetComponent<TextMeshProUGUI>().text));
+            highScoreText.GetComponent<TextMeshProUGUI>().text = Math.Round(Camera.main.transform.position.y + 3).ToString();
+        }
 
         //Checking if player is falling down or flying up
         travel = currentheight - previousheight;
@@ -95,12 +105,10 @@ public class PlayerMovement : MonoBehaviour
                 anim.SetBool("loadingJump", false);
                 if (transform.localScale == Vector3.one)
                 {
-                    print("We are jumping right Transform.localscale = " + transform.localScale + "transform.position.x = " + transform.position.x);
                     body.velocity = new Vector2(body.velocity.x, body.velocity.y + jumpPower);
                 }
                 else
                 {
-                    print("We are jumping left Transform.localscale = " + transform.localScale + "transform.position.x = " + transform.position.x);
                     body.velocity = new Vector2(body.velocity.x, body.velocity.y + jumpPower);
                 }
                 jumpPower = 4;
@@ -148,7 +156,7 @@ public class PlayerMovement : MonoBehaviour
     private bool IsonGround() //RETURNS TRUE IF PLAYER IS HITTING SOMETHING FROM THE BOTTOM got it from here: https://youtu.be/c3iEl5AwUF8
     {
         float extraHeightText = 0.1f;
-        RaycastHit2D raycastHit = Physics2D.BoxCast(slimesBoxCollider2D.bounds.center, slimesBoxCollider2D.bounds.size, 0, Vector2.down, extraHeightText, groundLayerMask);
+        RaycastHit2D raycastHit = Physics2D.BoxCast(slimesBoxCollider2D.bounds.center, slimesBoxCollider2D.bounds.size, 0, Vector2.down, extraHeightText, objectLayerMask);
         Color rayColor;
         if (raycastHit.collider != null) //for debugging purposes
         {
@@ -168,24 +176,15 @@ public class PlayerMovement : MonoBehaviour
     private bool IsHittingLeftWall() //RETURNS TRUE IF PLAYER IS HITTING SOMETHING FROM THE BOTTOM got it from here: https://youtu.be/c3iEl5AwUF8
     {
         float extraHeightText = 0.1f;
-        RaycastHit2D raycastHit = Physics2D.BoxCast(new Vector3(slimesBoxCollider2D.bounds.center.x - extraHeightText, slimesBoxCollider2D.bounds.center.y, slimesBoxCollider2D.bounds.center.z), slimesBoxCollider2D.bounds.size, 0, Vector2.left, 0, wallLayerMask);
+        RaycastHit2D raycastHit = Physics2D.BoxCast(new Vector3(slimesBoxCollider2D.bounds.center.x - extraHeightText, slimesBoxCollider2D.bounds.center.y, slimesBoxCollider2D.bounds.center.z), slimesBoxCollider2D.bounds.size, 0, Vector2.left, 0, objectLayerMask);
         return raycastHit.collider != null;
     }
 
     private bool IsHittingRightWall() //RETURNS TRUE IF PLAYER IS HITTING SOMETHING FROM THE BOTTOM got it from here: https://youtu.be/c3iEl5AwUF8
     {
         float extraHeightText = 0.1f;
-        RaycastHit2D raycastHit = Physics2D.BoxCast(new Vector3(slimesBoxCollider2D.bounds.center.x + extraHeightText, slimesBoxCollider2D.bounds.center.y, slimesBoxCollider2D.bounds.center.z), slimesBoxCollider2D.bounds.size, 0, Vector2.left, 0, wallLayerMask);
+        RaycastHit2D raycastHit = Physics2D.BoxCast(new Vector3(slimesBoxCollider2D.bounds.center.x + extraHeightText, slimesBoxCollider2D.bounds.center.y, slimesBoxCollider2D.bounds.center.z), slimesBoxCollider2D.bounds.size, 0, Vector2.left, 0, objectLayerMask);
         return raycastHit.collider != null;
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        print("Trigger");
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        print("Trigger False");
     }
 
 }
