@@ -16,10 +16,7 @@ namespace TMPro.Examples
         }
 
 
-        void Start()
-        {
-            StartCoroutine(AnimateVertexColors());
-        }
+
 
 
         /// <summary>
